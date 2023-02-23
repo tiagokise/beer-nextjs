@@ -4,29 +4,35 @@ import styled from 'styled-components';
 export const Jumbotron = styled.div`
   background: #260700;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: end;
   align-items: center;
-  height: 70vh;
-  padding: 0 20vw 0 0;
-  gap: 25%;
+  height: auto;
+  padding: 30px 0 0 0;
+  gap: 60px;
   overflow: hidden;
 `;
 export const BeerLogo = styled(Image)`
   position: absolute;
   left: 20px;
   top: 20px;
-  width: 10vw;
-  height: auto;
+  width: 20vw;
+  max-width: 250px;
+  height: auto; 
 `
 
 export const BeerInfoWrapper = styled.div`
   height: auto;
-  width: 30vw;
+  width: 80vw;
+  max-width: 420px;
   z-index: 2;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
+  @media (min-width: 1024px){
+    width: 30vw;
+
+  }
   
 
 `;
@@ -63,14 +69,20 @@ export const BeerImage = styled(Image)`
   width: 11vw;
   height: auto;
   object-fit: contain;
-  min-height: 53vh;
-  max-height: 53vh;
-  box-shadow:
+  box-shadow:0 -49px 90px 89px #d1981b, 0 0 100px 20px #d1981b, 0 0 300px 45px #260700;
+  background-color: #d1981b;
+  z-index: 1;
+  @media (min-width: 1024px){
+    box-shadow:
     0 0 60px 30px #d1981b,  /* inner white */
     0 0 80px 130px #d1981b, /* middle magenta */
     0 0 400px 200px #260700; /* outer cyan */
-  background-color: #d1981b;
-  z-index: 1;
+    background-color: #d1981b;
+    min-height: 53vh;
+    max-height: 53vh;
+    width: 11vw;
+
+  }
 `;
 
 export const BeerDataWrapper = styled.div`

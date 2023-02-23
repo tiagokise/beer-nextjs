@@ -1,11 +1,6 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/api/cervejas": "pages/api/cervejas.js",
-  "/cervejas/Beers": "pages/cervejas/Beers.html",
-  "/": "pages/index.html",
   "/_document": "pages/_document.js",
-  "/cervejas/[id]": "pages/cervejas/[id].js",
-  "/cervejas": "pages/cervejas.js",
-  "/404": "pages/404.html"
+  "/cervejas": "pages/cervejas.js"
 }
